@@ -1,0 +1,148 @@
+/*
+Theme Name: Simple Pro
+Theme URI: https://miosito.com
+Author: Andrea Marchetti
+Author URI: https://marchettidesign.net
+Description: Our fantastic base theme
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License V2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simplepro
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ! Reset */
+body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
+
+/* ! Base */
+
+body {
+    font-family: system-ui, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 60px; line-height: 1; font-weight: 800; }
+h2 { font-size: 40px; line-height: 1.3; font-weight: 800; }
+h3 { font-size: 30px; line-height: 1.3; font-weight: 800; }
+h4 { font-size: 25px; line-height: 1.3; font-weight: 800; }
+h5 { font-size: 20px; line-height: 1.3; font-weight: 800; }
+h6 { font-size: 15px; line-height: 1.3; font-weight: 800; }
+
+.img-res { width: 100%; height: auto; }
+.mb-1 { margin-bottom: 20px; }
+.mb-2 { margin-bottom: 40px; }
+
+@media (max-width: 768px) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 30px;}
+  h3 {font-size: 25px;}
+}
+
+a{ text-decoration: none; color: #F75E47; }
+
+p{ line-height: 1.3; }
+
+/* ! Layout
+--------------------------------------------- */
+
+.footer { border: 1px solid red; padding: 10px; margin: 10px; }
+
+.container, 
+article { margin: 10px; padding: 10px;  }
+
+.container { max-width: 800px; margin: 0 auto; }
+.page .container { max-width: 1200px; margin: 0 auto; }
+
+/* ! Header
+--------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; /* bordi arrotondati */
+    /* La proprietà box-shadow è utilizzata per aggiungere ombre a un elemento */
+/* Parametri: 
+   - orizzontale: 0 (nessuna ombra orizzontale)
+   - verticale: 5px (ombra spostata verso il basso di 5px)
+   - sfocatura: 20px (ampiezza dell'ombra sfocata)
+   - colore: rgba(0,0,0,0.2) (ombra nera con una trasparenza del 20%) */
+box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.logo {
+    display: inline-block;
+    color: #000;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+a {
+    color: orange;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 10px;
+    display: block;
+    color: #000;
+}
+
+.menu li.evi a {
+    padding: 10px;
+    display: block;
+    color: #000;
+    background: #F75E47;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 20px
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul {
+        overflow-x: auto;
+        white-space: nowrap; /* non andare a capo */
+    }
+  
+}
+
+/* ! Hero
+--------------------------------------------- */
+
+.hero { padding: 20px; text-align: center; }
+
+.hero h1 { padding: 100px 10px; }
+
+.page .hero h1 { padding: 150px 10px; }
+
+/* .single .hero { display: none; } */
